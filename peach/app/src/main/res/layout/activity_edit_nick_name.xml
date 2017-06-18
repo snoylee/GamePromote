@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <EditText
+        android:id="@+id/userNick"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/login_14sp" />
+
+</LinearLayout>

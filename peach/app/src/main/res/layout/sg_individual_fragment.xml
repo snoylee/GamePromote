@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/sg_head_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_line"></include>
+
+            <RelativeLayout
+                android:id="@+id/basic_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.xygame.sg.define.view.CircularImage
+                    android:id="@+id/avatar_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY" />
+                <!--<ImageView-->
+                <!--android:id="@+id/avatar_iv"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/default_avatar" />-->
+
+
+                <TextView
+                    android:id="@+id/nick_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/avatar_iv"
+                    android:text="游客"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/noologin_nick_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/avatar_iv"
+                    android:text="游客"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/avatar_iv"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/avatar_iv"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sex_age_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sex_bg"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"/>
+                    <!--android:drawableLeft="@drawable/female"-->
+                    <RelativeLayout
+                        android:id="@+id/userTypeShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/type_icon_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/identy_type_icon_bg"
+                            android:drawableLeft="@drawable/model_identy_icon"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/type_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/type_icon_tv"
+                            android:background="@drawable/identy_type_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="5dp"
+                            android:text="模特"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/jjrTypeIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/jinjiren_icon"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/attention_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/attention"
+                            android:drawablePadding="5dp"
+                            android:text="关注"
+                            android:textColor="@color/text_gray_s" />
+
+                        <TextView
+                            android:id="@+id/attention_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="0"
+                            android:textColor="@color/text_gray_l"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="20dp"
+                        android:background="@color/gray_divider"></View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/collect_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/favorite"
+                            android:drawablePadding="5dp"
+                            android:text="收藏"
+                            android:textColor="@color/text_gray_s" />
+
+                        <TextView
+                            android:id="@+id/favorite_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="0"
+                            android:textColor="@color/text_gray_l"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_divider_line" />
+
+        </LinearLayout>
+
+        <include layout="@layout/gray_divider_wide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/newsLayout"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/wallet_icon_iv1"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sg_news_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/wallet_icon_iv1"
+                    android:text="我的消息"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/wallet_arrow_iv1"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/wallet_arrow_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+
+                <TextView
+                    android:id="@+id/nuReadNews"
+                    android:layout_width="@dimen/main_frame_ico"
+                    android:layout_height="@dimen/main_frame_ico"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/shape_circle_red"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/main_frame_pop_text_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/noticeManageView"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/notice_manage_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/notice_manage_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/notice_manage_icon_iv"
+                    android:text="@string/menu_notice_manage"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/notice_manage_arrow_iv"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/notice_manage_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/walletView"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/wallet_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/wallet_icon_iv"
+                    android:text="@string/menu_wallet"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/wallet_arrow_iv"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/wallet_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+        </LinearLayout>
+
+        <include layout="@layout/gray_divider_wide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/vip_rl"
+                style="@style/MenuItemStyle"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/vip_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vip_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/vip_iv"
+                    android:text="@string/menu_recent"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:id="@+id/vip_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/vip_arrow_iv"
+                    android:gravity="center"
+                    android:hint="开通会员"
+                    android:textColor="@color/text_gray_s" />
+
+
+                <ImageView
+                    android:id="@+id/vip_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <!--<include-->
+            <!--style="@style/MenuItemDividerStyle"-->
+            <!--layout="@layout/gray_divider_line" -->
+            <!--/>-->
+
+            <RelativeLayout
+                android:id="@+id/recent_rl"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/recent_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recent_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/recent_icon_iv"
+                    android:text="@string/menu_recent"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:id="@+id/recent_num_tv"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/recent_arrow_iv"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/recent_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/identy_rl"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/identy_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/identy_icon" />
+
+                <TextView
+                    android:id="@+id/identy_type_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/identy_icon_iv"
+                    android:text="@string/menu_identy"
+                    android:textColor="@color/text_gray_l" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/identy_arrow_iv"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/identy_status_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="申请认证"
+                        android:textColor="@color/text_gray_s" />
+
+                    <TextView
+                        android:id="@+id/isShengHe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/shape_circle_red"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_frame_pop_text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/identy_arrow_iv"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/identy_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/tutorial_rl"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/tutorial_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tutorial_icon" />
+
+                <TextView
+                    android:id="@+id/tutorial_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tutorial_icon_iv"
+                    android:text="@string/menu_tutorial"
+                    android:textColor="@color/text_gray_l" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tutorial_arrow_iv"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tutorial_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include layout="@layout/gray_divider_line" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/gray_divider_wide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/bangPhoneView"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/setting_icon_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/shoujibangding_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/setting_icon_iv1"
+                    android:text="绑定手机"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:id="@+id/bangPhoneValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/setting_arrow_iv1"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/setting_arrow_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/settingView"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/setting_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/setting_icon_iv"
+                    android:text="@string/menu_setting"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/setting_arrow_iv"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/setting_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/about_us_rl"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/tutorial_icon_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/qupingfen_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tutorial_icon_iv1"
+                    android:text="去评分"
+                    android:textColor="@color/text_gray_l" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tutorial_arrow_iv1"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tutorial_arrow_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                style="@style/MenuItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <RelativeLayout
+                android:id="@+id/who_rl"
+                style="@style/MenuItemStyle">
+
+                <ImageView
+                    android:id="@+id/tutorial_icon_iv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/about_us_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tutorial_icon_iv11"
+                    android:text="我们是谁"
+                    android:textColor="@color/text_gray_l" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tutorial_arrow_iv11"
+                    android:background="@drawable/red_dot"
+                    android:gravity="center"
+                    android:text="28"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tutorial_arrow_iv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include layout="@layout/gray_divider_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

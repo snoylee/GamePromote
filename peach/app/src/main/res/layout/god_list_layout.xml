@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/serviceView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/serviceText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="智能"
+                android:textColor="#a7a7a7" />
+
+            <ImageView
+                android:id="@+id/serviceImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/down_gray"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#dedede" />
+
+        <LinearLayout
+            android:id="@+id/sexView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/sexText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="周榜"
+                android:textColor="#a7a7a7" />
+
+            <ImageView
+                android:id="@+id/sexImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/down_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/optionsView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+
+    <com.xygame.sg.widget.refreash.PullToRefreshListView3
+        android:id="@+id/noticeList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_background"
+        android:dividerHeight="0.5dip"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="low"
+        android:fadingEdgeLength="0.0sp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+
+</LinearLayout>

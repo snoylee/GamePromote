@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    xmlns:range="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/root_sv"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_wide_line" />
+
+            <include layout="@layout/gray_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="性别"
+                    android:textColor="@color/text_gray_l" />
+
+                <RadioGroup
+                    android:id="@+id/sex_rg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/sex_all_rb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+
+                    <RadioButton
+                        android:id="@+id/sex_all_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="@color/text_color_list" />
+
+                    <TextView
+                        android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede" />
+
+                    <RadioButton
+                        android:id="@+id/male_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="男"
+                        android:textColor="@color/text_color_list" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede" />
+
+                    <RadioButton
+                        android:id="@+id/female_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="女"
+                        android:textColor="@color/text_color_list" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <include
+                style="@style/ModelFilterItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="国籍"
+                        android:textColor="@color/text_gray_l" />
+
+                    <TextView
+                        android:id="@+id/country_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="不限"
+                        android:textColor="@color/dark_green"
+                        android:textColorHint="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/arrows" />
+                </LinearLayout>
+
+                <include
+                    style="@style/ModelFilterItemDividerStyle"
+                    layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="所在地"
+                        android:textColor="@color/text_gray_l" />
+
+                    <TextView
+                        android:id="@+id/city_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="不限"
+                        android:textColor="@color/dark_green"
+                        android:textColorHint="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/arrows" />
+                </LinearLayout>
+
+                <include
+                    style="@style/ModelFilterItemDividerStyle"
+                    layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="职业"
+                        android:textColor="@color/text_gray_l" />
+
+                    <TextView
+                        android:id="@+id/occup_type_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="不限"
+                        android:textColor="@color/dark_green"
+                        android:textColorHint="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/arrows" />
+                </LinearLayout>
+
+
+                <include layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eeeeee"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:text="模特风格"
+                        android:textColor="@color/text_gray_l" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/male_style_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:measureWithLargestChild="false"
+                    android:minHeight="39dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="男"
+                        android:textColor="@color/text_gray_l" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/arrows" />
+
+                        <TextView
+                            android:id="@+id/textviewmalestyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/imageView22"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical|right"
+                            android:hint="不限"
+                            android:textColorHint="#c4c4c4" />
+
+                        <NoScrollGridView
+                            android:id="@+id/male_style_gv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/imageView22"
+                            android:background="@android:color/white"
+                            android:descendantFocusability="blocksDescendants"
+                            android:horizontalSpacing="5dp"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="3"
+                            android:verticalSpacing="5dp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/female_style_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:minHeight="39dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="女"
+                        android:textColor="@color/text_gray_l" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/arrows" />
+
+                        <TextView
+                            android:id="@+id/textviewfemalestyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/imageView23"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical|right"
+                            android:hint="不限"
+                            android:textColorHint="#c4c4c4" />
+
+                        <NoScrollGridView
+                            android:id="@+id/female_style_gv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/imageView23"
+                            android:background="@android:color/white"
+                            android:descendantFocusability="blocksDescendants"
+                            android:horizontalSpacing="5dp"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="3"
+                            android:verticalSpacing="5dp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_divider_line" />
+
+            <include layout="@layout/gray_divider_wide_line" />
+
+            <include layout="@layout/gray_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="年龄"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/age_rsb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        bind:begin="${ageBegin}"
+                        bind:end="${ageEnd}"
+                        range:max="40"
+                        range:min="15"
+                        range:text="岁" />
+                </LinearLayout>
+
+                <include
+                    style="@style/ModelFilterItemDividerStyle"
+                    layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="身高"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/height_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${heightBegin}"
+                        bind:end="${heightEnd}"
+                        range:max="190"
+                        range:min="150"
+                        range:text="cm" />
+                </LinearLayout>
+
+                <include
+                    style="@style/ModelFilterItemDividerStyle"
+                    layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="体重"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/weight_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${weightBegin}"
+                        bind:end="${weightEnd}"
+                        range:max="75"
+                        range:min="40"
+                        range:text="kg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cup_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingBottom="8dp"
+                            android:text="罩杯"
+                            android:textColor="@color/text_gray_l" />
+
+                        <IRangeSeekBar
+                            android:id="@+id/cup_rsb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            bind:begin="${cupBegin}"
+                            bind:end="${cupEnd}"
+                            range:max="10"
+                            range:min="1"
+                            range:sequence="A,B,C,D,E,F,G" />
+                    </LinearLayout>
+
+                    <include
+                        style="@style/ModelFilterItemDividerStyle"
+                        layout="@layout/gray_divider_line" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="三围-胸围"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/bust_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${bustBegin}"
+                        bind:end="${bustEnd}"
+                        range:max="110"
+                        range:min="50"
+                        range:text="cm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="三围-腰围"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/waist_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${waistBegin}"
+                        bind:end="${waistEnd}"
+                        range:max="110"
+                        range:min="50"
+                        range:text="cm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="三围-臀围"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/hip_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${hipBegin}"
+                        bind:end="${hipEnd}"
+                        range:max="110"
+                        range:min="50"
+                        range:text="cm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="8dp"
+                        android:text="鞋码"
+                        android:textColor="@color/text_gray_l" />
+
+                    <IRangeSeekBar
+                        android:id="@+id/shoecode_rsb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        bind:begin="${shoesCodeBegin}"
+                        bind:end="${shoesCodeEnd}"
+                        range:max="45"
+                        range:min="30"
+                        range:text="码" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:layout_marginTop="10dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/filter_bt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/shape_rect_dark_green"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="搜索"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18sp" />-->
+
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/reset_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="重置"
+            android:textSize="18sp"
+            rv:rv_backgroundColor="@color/text_white"
+            rv:rv_cornerRadius="5dp" />
+
+
+        <Button
+            android:id="@+id/filter_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_dark_green"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

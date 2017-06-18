@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/search" />
+
+                <EditText
+                    android:id="@+id/inputText"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入通告号或订单号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/login_14sp" />
+
+                <ImageView
+                    android:id="@+id/clearButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/et_clear_pressed" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:text="搜索"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/login_16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_line" />
+
+    <ListView
+        android:id="@+id/section_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_background"
+        android:dividerHeight="5dp"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="low"
+        android:fadingEdgeLength="0.0sp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+
+</LinearLayout>

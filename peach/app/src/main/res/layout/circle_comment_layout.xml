@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <com.xygame.sg.widget.refreash.PullToRefreshListView3
+        android:id="@+id/cicleList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#FFFFFFFF"
+        android:divider="@color/gray_background"
+        android:dividerHeight="0.5dip"
+        android:background="@color/gray_background"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#ffffffff"
+        android:scrollbars="none" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:hint="添加评论60字以内"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:maxLength="60"
+            android:background="@drawable/shape_rect_input_white"/>
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fabiaopingluna" />
+    </LinearLayout>
+</LinearLayout>

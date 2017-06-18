@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_gray">#f6f6f8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#cccccc</color>
+    <color name="dark_gray">#898989</color>
+    <color name="main_page_unselect_color">#A5A5A5</color>
+    <color name="main_page_selecct_color">#4ACEC3</color>
+    <color name="dark_green">#4ACEC3</color>
+    <color name="deep_green">#34A8D9</color>
+    <color name="login_gray">#ABABAB</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="black">#000000</color>
+    <color name="search_edit_background">#e3e3e3</color>
+    <color name="white_background">#FFFFFF</color>
+    <color name="gray_background">#eeeeee</color>
+    <color name="gray_divider">#dedede</color>
+    <color name="vido_background">#FF000000</color>
+    <color name="male_bg">#3996ec</color>
+    <color name="female_bg">#ff6085</color>
+    <color name="modle_bg">#ffc600</color>
+    <color name="modle_icon_bg">#ffae00</color>
+    <color name="cameraman_bg">#06a5f8</color>
+    <color name="cameraman_icon_bg">#0891f0</color>
+    <color name="text_gray_a7a7a7">#a7a7a7</color>
+    <color name="text_gray_s">#aaaaaa</color>
+    <color name="text_gray_m">#787878</color>
+    <color name="text_gray_l">#444444</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_red">#ffff0000</color>
+    <color name="tab_select">#FF4ACFC1</color>
+    <color name="tab_unselect">#aaaaaa</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#3366CC</color>
+    <color name="tran_black_30">#4d000000</color>
+    <color name="tran_black_50">#80000000</color>
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+    <color name="pink">#FE5D88</color>
+    <color name="yellow">#FFAD03</color>
+    <color name="deep_gray">#313131</color>
+    <color name="prise_color">#4ACEC3</color>
+    <color name="light_gray">#BEC2C5</color>
+    <color name="light_light_gray">#F0F0F0</color>
+    <color name="control_back">#AA00003D</color>
+
+    <color name="notice_request_b1">#34a8d9</color>
+    <color name="notice_request_b2">#49cec3</color>
+    <color name="notice_request_b3">#49ce91</color>
+    <color name="notice_request_b4">#35b835</color>
+    <color name="notice_request_b5">#80b547</color>
+    <color name="notice_request_b6">#adb92b</color>
+    <color name="notice_request_b7">#c8a724</color>
+    <color name="notice_request_b8">#d28e22</color>
+    <color name="notice_request_b9">#e57c37</color>
+    <color name="notice_request_b10">#ef4a29</color>
+    <color name="notice_request_b11">#ed408d</color>
+    <color name="notice_request_b12">#d344ed</color>
+    <color name="notice_request_b13">#9a2dd9</color>
+    <color name="notice_request_b14">#6a47e9</color>
+    <color name="notice_request_b15">#4475e6</color>
+    <color name="notice_request_b16">#26639d</color>
+    <color name="notice_request_b17">#198771</color>
+    <color name="notice_request_b18">#4e823a</color>
+    <color name="notice_request_b19">#864b1b</color>
+    <color name="notice_request_b20">#bb2119</color>
+
+    <!-- 二维码相关 -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="all_texxt_bule_color">#757AB1</color>
+
+    <color name="green">#36B72C</color>
+    <color name="light_search_gray">#E3E3E3</color>
+
+    <color name="type_item_bg">#FFEBEFF2</color>
+    <color name="translucent_gray">#99000000</color>
+    <color name="half_transparent">#77000000</color>
+
+    <color name="main_menu_bg">#F5F5F5</color>
+
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/topView"
+        layout="@layout/sg_head_layout" />
+
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <com.xygame.sg.activity.image.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/deep_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/priseImage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/priseIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sg_zan_no" />
+
+                <TextView
+                    android:id="@+id/priseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="赞"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_12sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/fenGeLine"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/shareView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sg_share_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="分享"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/login_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sg_zan_no" />
+
+            <TextView
+                android:id="@+id/priseCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

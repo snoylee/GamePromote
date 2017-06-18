@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/cate_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cate_ad_selected" />
+
+        <TextView
+            android:id="@+id/type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cate_iv"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:text="广告平面"
+            android:textColor="@color/color_grey_999999" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/vertical_line_view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/gray_divider" />
+
+    <View
+        android:id="@+id/horizon_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gray_divider" />
+
+    <FrameLayout
+        android:id="@+id/selected_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/notice_shoot_cate_item_blue_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/selected_cate_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/selected_cate" />
+    </FrameLayout>
+
+</FrameLayout>

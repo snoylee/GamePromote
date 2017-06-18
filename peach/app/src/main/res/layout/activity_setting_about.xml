@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模范儿"
+            android:textColor="@color/text_gray_m" />
+
+        <TextView
+            android:id="@+id/version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="V1.03"
+            android:textColor="@color/text_gray_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/score_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="去评分"
+                android:textColor="@color/text_gray_m" />
+
+
+            <ImageView
+                android:id="@+id/recent_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+
+        <include
+            style="@style/SettingMenuItemDividerStyle"
+            layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/who_rl"
+            style="@style/MenuItemStyle">
+
+
+            <TextView
+                android:id="@+id/tutorial_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="我们是谁"
+                android:textColor="@color/text_gray_m" />
+
+
+            <ImageView
+                android:id="@+id/tutorial_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+        <include
+            style="@style/SettingMenuItemDividerStyle"
+            layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/gotoShare"
+            style="@style/MenuItemStyle"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="去分享"
+                android:textColor="@color/text_gray_m" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+
+</LinearLayout>

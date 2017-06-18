@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xygame.sg.define.view.CircularImage
+            android:id="@+id/headImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/indexIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/index_no1"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/userNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deep_gray"
+            android:layout_alignTop="@+id/headImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

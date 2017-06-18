@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="50dp">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back"
+                />
+
+            <TextView
+                android:id="@+id/backViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="订单消息"
+            android:textSize="@dimen/login_18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:minWidth="50dp">
+
+            <TextView
+                android:id="@+id/rightButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/login_16sp"
+                android:text="完成"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/rightbuttonIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/more_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.xygame.sg.widget.ClearEditText
+            android:id="@+id/searchContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rect_search_edi_left"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="8dp"
+            android:hint="请输入搜索内容"
+            android:paddingLeft="8dp"
+            android:maxLength="20"
+            android:paddingRight="8dp"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="搜索"
+            android:textColor="@color/search_text_color_list"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="low"
+        android:fadingEdgeLength="0.0sp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+</LinearLayout>

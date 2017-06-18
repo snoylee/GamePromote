@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/shape_rect_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:indeterminateDrawable="@drawable/frame_loading"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tipText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_16sp" />
+
+        <View
+            android:id="@+id/titleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tipText"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/comfirmView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/titleLine"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/sg_comm_comfirm"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/login_16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

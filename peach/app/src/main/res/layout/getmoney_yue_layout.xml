@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="可提现金额"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/yuEValue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/red" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="申请提现"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/tixianValue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            android:background="@null"
+            android:hint="请输入提现金额"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="提现成功后，金额将转入您已绑定的支付宝账户"
+        android:textColor="@color/deep_gray" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="到账时间:1-7个工作日（视第三方支付平台具体情况而定）"
+        android:textColor="@color/deep_gray" />
+
+
+    <TextView
+        android:id="@+id/comfirmButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/shape_rect_dark_green"
+        android:gravity="center"
+        android:text="申请提现"
+        android:textColor="@color/white" />
+</LinearLayout>

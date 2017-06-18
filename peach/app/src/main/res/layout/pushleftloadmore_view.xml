@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.xygame.second.sg.defineview.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/media_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/ce_sidle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </com.xygame.second.sg.defineview.RefreshableView>
+</RelativeLayout>

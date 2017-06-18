@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_back"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/oneButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/oneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当然你买单"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/oneView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（已选择）"
+                android:textColor="@color/dark_green"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/twoButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/twoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是土豪我请你"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/twoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（已选择）"
+                android:textColor="@color/dark_green"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/fourButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/fourText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AA比较公平"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/fourView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（已选择）"
+                android:textColor="@color/dark_green"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/eightButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/eightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全天（8小时）"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/eightView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（已选择）"
+                android:textColor="@color/dark_green"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dismiss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pop_back"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="取消"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

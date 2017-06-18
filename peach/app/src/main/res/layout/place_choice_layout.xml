@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_menu_bg"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/areaList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/main_menu_bg"
+            android:dividerHeight="0.5dp"
+            android:focusableInTouchMode="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white" >
+
+            <GridView
+                android:id="@+id/photoList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xygame.sg.utils.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noScrollgridview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:horizontalSpacing="3dp"
+    android:numColumns="4"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:verticalSpacing="5dp">
+
+</com.xygame.sg.utils.NoScrollGridView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/gray_divider_line" />
+
+    <RelativeLayout
+        android:id="@+id/basic_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.xygame.sg.define.view.CircularImage
+            android:id="@+id/avatar_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/nick_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/avatar_iv"
+            android:text="游客"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/comment_time_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/avatar_iv"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/avatar_iv"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="评价时间："
+            android:textColor="@color/text_gray_m" />
+
+        <TextView
+            android:id="@+id/comment_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/avatar_iv"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/comment_time_tip_tv"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="5dp"
+            android:text="2015-12-21 16:35:44"
+            android:textColor="@color/text_gray_m" />
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/gray_divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/accord_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/model_accord" />
+
+        <RatingBar
+            android:id="@+id/accord_rating"
+            style="@style/smallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/accord_tv"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:singleLine="true"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/accord_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/experience_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/model_experience" />
+
+        <RatingBar
+            android:id="@+id/experience_rating"
+            style="@style/smallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/experience_tv"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:singleLine="true"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/experience_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/coordinate_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/model_coordinate" />
+
+        <RatingBar
+            android:id="@+id/coordinate_rating"
+            style="@style/smallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/coordinate_tv"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:singleLine="true"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/coordinate_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/gray_divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <include layout="@layout/gray_divider_line" />
+
+</LinearLayout>

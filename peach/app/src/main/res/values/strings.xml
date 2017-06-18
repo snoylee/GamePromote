@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜜桃社区</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 主界面参数配置——王琪 -->
+    <string name="sg_mainframe_model">模特</string>
+    <string name="sg_mainframe_notice">通告</string>
+    <string name="sg_mainframe_news">消息</string>
+    <string name="sg_mainframe_personal">个人</string>
+    <string name="year">年</string>
+    <string name="yesterday">昨天</string>
+    <string name="reyesterday">前天</string>
+    <string name="sunday">周日</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="zmrequest">招募要求</string>
+
+    <!-- 登录注册参数配置——王琪 -->
+    <string name="sg_loginwel_title">欢迎来到蜜桃社区</string>
+    <string name="sg_loginwel_subtitle">请选择一种方式注册/登录</string>
+    <string name="sg_login_tip">登录</string>
+    <string name="sg_login_tip_sub">蜜桃社区账号</string>
+    <string name="sg_register_tip">注册</string>
+    <string name="sg_login_choice_tip">OR</string>
+    <string name="sg_login_subiangg">随便逛逛 ></string>
+    <string name="sg_login_forgetpwd_tip">忘记密码？</string>
+    <string name="sg_login_account_hit">手机号码</string>
+    <string name="sg_login_pwd_hit">登录密码</string>
+    <string name="sg_login_comfirm">确定</string>
+    <string name="sg_forget_title">忘记密码</string>
+    <string name="sg_forget_cellphone">请输入手机号码</string>
+    <string name="sg_forget_send">发送</string>
+    <string name="sg_forget_verify">请输入验证码</string>
+    <string name="sg_forget_next">下一步</string>
+    <string name="sg_forget2_title">重置密码</string>
+    <string name="sg_forget2_pwd">请输入新密码</string>
+    <string name="sg_forget2_pwd_agin">再次输入新密码</string>
+    <string name="sg_forget2_finish">确定</string>
+    <string name="sg_register_title">注册</string>
+    <string name="sg_register_cellphone">请输入手机号码</string>
+    <string name="sg_register_pwd">请输入6—16位密码</string>
+    <string name="sg_register_verify">请输入验证码</string>
+    <string name="sg_register_send">发送</string>
+    <string name="sg_register_show_pwd">Abc</string>
+    <string name="sg_register_hide_pwd">***</string>
+    <string name="sg_register_next">下一步</string>
+    <string name="sg_register_rols_tip">注册代表您已阅读并同意蜜桃社区</string>
+    <string name="sg_register_ruls_view">《用户协议》</string>
+    <string name="sg_register_ruls_title">用户协议</string>
+    <string name="sg_register_ruls_content_title">欢迎您使用蜜桃社区软件及服务！</string>
+    <string name="sg_register_ruls_content_test">欢迎您使用蜜桃社区软件及服务！</string>
+    <string name="sg_register2_title">完善信息</string>
+    <string name="sg_register2_nickname">请输入昵称</string>
+    <string name="sg_register2_bothday">请选择生日</string>
+    <string name="sg_register2_man">男</string>
+    <string name="sg_register2_woman">女</string>
+    <string name="sg_register2_model">我是模特</string>
+    <string name="sg_register2_photor">我是摄影师</string>
+    <string name="sg_register2_notice">请注意，性别和职业在完成注册后不能更改哦</string>
+    <string name="sg_register2_finish">完成注册</string>
+    <string name="menu_notice_manage">通告管理</string>
+    <string name="menu_wallet">我的钱包</string>
+    <string name="menu_recent">最近来访</string>
+    <string name="menu_identy">认证模特</string>
+    <string name="menu_tutorial">模特教程</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_delete_pic">删除</string>
+
+    <!-- 通用相关（王琪） -->
+    <string name="sg_comm_comfirm">确定</string>
+    <string name="sg_comm_cancel">取消</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="sg_comm_hit_text">请输入您的编辑内容</string>
+    <string name="sg_comm_editor_brithday_title">编辑生日</string>
+    <string name="sg_comm_editor_brithday">出生日期</string>
+    <string name="sg_comm_editor_age">年龄</string>
+    <string name="sg_comm_editor_brithday_tip">选择您的出生日期，系统将自动计算您的年龄</string>
+    <string name="sg_comm_editor_country_title">编辑国籍</string>
+    <string name="sg_comm_editor_country_location">定位到的位置</string>
+    <string name="sg_comm_editor_country_all">全部</string>
+
+    <!-- 编辑体形资料相关（王琪） -->
+    <string name="sg_editor_bodyinfo_title">编辑形体资料</string>
+    <string name="sg_editor_bodyinfo_bodyHight">身高</string>
+    <string name="sg_editor_bodyinfo_bodyWeight">体重</string>
+    <string name="sg_editor_bodyinfo_bodyHeart">罩杯</string>
+    <string name="sg_editor_bodyinfo_bodyThreeHeart">三围</string>
+    <string name="sg_editor_bodyinfo_bodyShoes">鞋码</string>
+    <string name="sg_editor_bodyinfo_comfirm">确定</string>
+    <string name="sg_editor_style_title">编辑风格</string>
+    <string name="sg_editor_style_tip">限选三个标签</string>
+
+    <string name="sg_editor_location_title">编辑所在地</string>
+    <string name="sg_editor_location_tip">定位到的位置</string>
+
+    <!-- 作品相册相关（王琪） -->
+    <string name="sg_personal_photo_title">作品相册</string>
+    <string name="sg_personal_editor_photo_title">编辑作品相册</string>
+    <string name="sg_personal_photo_upload">上传</string>
+    <string name="sg_personal_photo_deletip">删除</string>
+    <string name="sg_personal_photo_addtip">新拍的一套写真，大家轻拍，嘻嘻</string>
+    <string name="sg_personal_photo_cancel">取消</string>
+
+    <!-- 分享相关（王琪） -->
+    <string name="sg_share_title">分享至</string>
+    <string name="sg_share_weixin">微信好友</string>
+    <string name="sg_share_qq">QQ好友</string>
+    <string name="sg_share_weibo">新浪微博</string>
+    <string name="sg_share_cancel">取消</string>
+
+    <!-- 模特相关（王琪） -->
+    <string name="sg_create_modelpic_title">创建作品集</string>
+    <string name="sg_create_modelpic_hitintro">上传您的作品就能展示给更多的摄影师和通告方、接到更多的通告。</string>
+    <string name="sg_create_modelpic_tip">一次最多上传20张作品</string>
+    <string name="sg_create_modelpic_commit">上传</string>
+    <string name="sg_eidtor_headpic_title">编辑头像</string>
+    <string name="sg_eidtor_headpic_tip">点击更换头像，长按拖拽可更改排序，最多3张，默认显示第一张头像</string>
+    <string name="sg_eidtor_heart_tite">编辑作品集介绍</string>
+
+    <!-- 举报相关（王琪） -->
+    <string name="sg_report_title">投诉举报</string>
+    <string name="sg_report_top_tip">请选择举报原因</string>
+    <string name="sg_report_bottom_tip">其它投诉举报</string>
+    <string name="sg_report_top_commit">提交</string>
+    <string name="sg_report_input">请输入举报内容</string>
+    <string name="sg_report_contactor">请输入联系方式</string>
+    <string name="sg_report_tip">为了更好的处理问题，在举报时您可以添加截图及您的手机号码或邮箱地址，我们会尽快为您处理。</string>
+    <string name="sg_report_second_title">其它投诉举报</string>
+    <string name="title_activity_person_info">PersonInfoActivity</string>
+    <string name="work_tab">作品</string>
+    <string name="price_tab">报价</string>
+    <string name="data_tab">资料</string>
+    <string name="body_label">我的形体资料</string>
+    <string name="record_label">我的履历</string>
+    <string name="summary_label">我的简介</string>
+    <string name="style_label">我的风格</string>
+    <string name="basic_info_label">基本资料</string>
+    <string name="title_activity_like_list">LikeListActivity</string>
+    <string name="title_activity_edit_price">编辑报价</string>
+    <string name="category_label">拍摄大类</string>
+    <string name="manager">管理</string>
+    <string name="sort_second_category">排序拍摄小类</string>
+    <string name="delete_second_category">删除拍摄小类</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="finish">完成</string>
+    <string name="delete">删除</string>
+    <string name="sure">确定</string>
+    <string name="type_pinmian">平面</string>
+    <string name="type_huodong">活动</string>
+    <string name="type_liyi">礼仪</string>
+    <string name="title_activity_sort_category">排序报价小类</string>
+    <string name="title_activity_delete_category">删除报价小类</string>
+    <string name="title_activity_select_first_category">选取拍摄大类</string>
+    <string name="title_activity_edit_second_category">修改拍摄小类</string>
+    <string name="title_activity_select_second_category">选择拍摄小类</string>
+    <string name="title_activity_select_price_unit">选择报价单位</string>
+    <string name="title_activity_edit_record">编辑履历</string>
+    <string name="title_activity_edit_detail_record">修改履历</string>
+    <string name="title_activity_edit_summary">编辑简介</string>
+    <string name="title_activity_edit_nick_name">编辑昵称</string>
+    <string name="title_activity_select_job_type">选择职业</string>
+    <string name="no_edit">未填</string>
+    <string name="title_activity_create_price">新增报价</string>
+    <string name="title_activity_hot_banner">HotBannerActivity</string>
+    <string name="plush_notice_nomal_tip">您的通告已经提交，只差最后一步了！您需要在30分钟内全额预付您的通告费用，我们将立即进行审核并发布！</string>
+    <string name="plush_notice_pay_tip">蜜桃社区温馨提示！\n你的通过正在审核，审核通过后，模特即可报名你的通过。只差最后一步了，您要先预付你的通告费用，以保证我们的的通告真实性。</string>
+    <string-array name="price_unit">
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>4小时</item>
+        <item>1天</item>
+        <item>1周</item>
+        <item>1件</item>
+        <item>2件</item>
+    </string-array>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_editor_country">EditorCountryActivity</string>
+    <string name="fans_num">粉丝：%1$s</string>
+    <string name="title_activity_filter_notice">筛选</string>
+    <string name="title_activity_search_notice">搜素</string>
+
+    <string name="reset_condition">重设</string>
+    <string name="title_activity_notice_detail">通告</string>
+    <string name="notice_payment_tip">亲爱的摄影师，\n预付成功后，在招募过程中可随时申请退款，如果在截止时间前未招募到模特，系统也将自动退款！</string>
+    <string name="title_activity_recruit">招募</string>
+
+    <string name="notice_no_pay_tip">预付费通告需预付全款后才能招募</string>
+
+    <array name="notice_request_bg">
+        <item>@color/notice_request_b1</item>
+        <item>@color/notice_request_b2</item>
+        <item>@color/notice_request_b3</item>
+        <item>@color/notice_request_b4</item>
+        <item>@color/notice_request_b5</item>
+        <item>@color/notice_request_b6</item>
+        <item>@color/notice_request_b7</item>
+        <item>@color/notice_request_b8</item>
+        <item>@color/notice_request_b9</item>
+        <item>@color/notice_request_b10</item>
+        <item>@color/notice_request_b11</item>
+        <item>@color/notice_request_b12</item>
+        <item>@color/notice_request_b13</item>
+        <item>@color/notice_request_b14</item>
+        <item>@color/notice_request_b15</item>
+        <item>@color/notice_request_b16</item>
+        <item>@color/notice_request_b17</item>
+        <item>@color/notice_request_b18</item>
+        <item>@color/notice_request_b19</item>
+        <item>@color/notice_request_b20</item>
+    </array>
+    <string name="title_activity_notice_close">关闭通告</string>
+    <string name="title_activity_close_share_options_view">CloseShareOptionsView</string>
+    <string name="tixian_tip">提现成功后，金额将返还到您充值/预付时所使用的第三方支付平台账户中（支付宝/微信/银联），由于该笔金额可能分多笔充值，提现时也会相应分多笔返还。\n到账时间：1—15个工作日（视第三方支付平台情况而定）</string>
+    <string name="tixian_model_tip">提现成功后，金额将转入您已绑定的支付宝账户。\n到账时间：1—7个工作日（视第三方支付平台情况而定）</string>
+    <string name="notice_signed_tip">出示给模特，扫一扫上面的二维码，立即拍摄签到。如今后在拍摄过程中发生纠纷，签到即可作为拍摄依据。</string>
+    <string name="qb_bang_tip">1.支付宝账户作为您在蜜桃社区上提现的结算通道。\n2.绑定支付宝必须和身份认证提交的姓名一致。\n3.解除支付宝绑定时必须输入支付密码。</string>
+
+    <!-- 二维码相关 -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="title_activity_setting_notice">消息通知设置</string>
+    <string name="title_activity_setting_safe">账户与安全</string>
+    <string name="title_activity_setting_modify_pass">修改登录密码</string>
+    <string name="title_activity_setting_opinion">意见反馈</string>
+    <string name="title_activity_setting_about">关于我们</string>
+    <string name="title_activity_setting_who">我们是谁</string>
+    <string name="title_activity_attention">关注</string>
+    <string name="title_activity_collect">收藏</string>
+    <string name="title_activity_recent_visit">最近来访</string>
+    <string name="title_activity_tutorial">教程</string>
+
+    <string name="pass_limit">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="title_activity_common_web_view">CommonWebViewActivity</string>
+    <string name="dir">/eim</string>
+    <string name="db_dir">/database</string>
+
+    <!--Openfire相关配置-->
+    <!--<integer name="xmpp_port">5238</integer>-->
+    <integer name="xmpp_port">5226</integer>
+    <!--<string name="xmpp_host">192.168.20.200</string>-->
+    <!--<string name="xmpp_host">192.168.10.28</string>-->
+    <string name="xmpp_host">openfile.madoufans.com</string>
+    <string name="xmpp_service_name">moreidols</string>
+    <bool name="is_remember">true</bool>
+    <bool name="is_autologin">false</bool>
+    <bool name="is_novisible">false</bool>
+    <string name="new_message">收到新短消息</string>
+    <string name="title_activity_test_test">TestTestActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_model">SearchModelActivity</string>
+    <string name="title_activity_filter_model">筛选</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_model_identy_first">模特认证(1/3)</string>
+    <string name="title_activity_model_identy_second">模特认证(2/3)</string>
+    <string name="title_activity_model_identy_third">完善资料(3/3)</string>
+    <string name="title_activity_pro_model_identy">高级模特认证</string>
+    <string name="title_activity_cmidenty_first">摄影师认证(1/2)</string>
+    <string name="title_activity_cmidenty_second">摄影师认证(2/2)</string>
+
+    <string name="share_sub_title_inivite">真实约拍，上蜜桃社区</string>
+    <string name="share_sub_title_model">快来约拍星模红人吧</string>
+    <string name="share_sub_title_cm">快来围观摄影大咖吧</string>
+    <string name="title_activity_choice_share_report">ChoiceShareReportActivity</string>
+
+    <string name="to_publish_no_verify">您的摄影师认证还未认证，请先认证等审核后再发布！</string>
+    <string name="to_publish_verifing">您的摄影师认证正在审核中！</string>
+    <string name="to_publish_refused">您的摄影师认证未通过，请先重新认证！</string>
+    <string name="title_activity_choice_date">ChoiceDateActivity</string>
+    <string name="title_activity_member_center">会员中心</string>
+    <string name="title_activity_comment_all">全部评价</string>
+
+    <string name="model_accord">模特与照片符合度</string>
+    <string name="model_experience">模特经验和专业度</string>
+    <string name="model_coordinate">模特拍摄时配合度</string>
+    <string name="cm_accord">通告与实际符合度</string>
+    <string name="cm_experience">摄影师经验和专业度</string>
+    <string name="cm_coordinate">摄影师结款速度</string>
+    <string name="title_activity_select_country">选择国籍</string>
+    <string name="title_activity_invite_guide">InviteGuideActivity</string>
+    <string name="title_activity_sort_price_view">SortPriceView</string>
+    <string name="title_activity_search_cm">SearchCMActivity</string>
+    <string name="title_activity_filter_cm">FilterCMActivity</string>
+    <string name="merchant_register_tip">您的资料我们将会在一个工作日内审核结束。在此期间，您无法发布通告，您可以在我们应用内逛逛</string>
+
+    <string name="man_tip">钻石可以用于送礼物，打赏其他用户或购买会员、兑换礼物等。</string>
+    <string name="woman_tip">钻石可以用于送礼物，打赏其他用户或购买会员、兑换礼物等；同时钻石可以兑换零钱提现。</string>
+    <string name="jpy_timer_tip">确保您能按时赴约，爽约影响信用评价</string>
+
+    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="permission_group_tools_label">Vitamio tools</string>
+    <string name="permission_group_tools_description">Access Vitamio package and resources.</string>
+    <string name="permission_receive_messages_label">Receive Vitamio messages</string>
+    <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio service.</string>
+    <string name="permission_write_providers_label">Write Vitamio providers</string>
+    <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
+    </string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+        this device.
+    </string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+
+</resources>

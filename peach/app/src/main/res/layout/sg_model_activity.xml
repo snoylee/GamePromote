@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/testShare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="分享测试" />
+
+            <Button
+                android:id="@+id/testOneButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testShare"
+                android:layout_marginTop="10dp"
+                android:text="一个按钮的提示框" />
+
+            <Button
+                android:id="@+id/testTwoButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testOneButton"
+                android:layout_marginTop="10dp"
+                android:text="两个按钮的提示框" />
+
+            <Button
+                android:id="@+id/testReport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testTwoButton"
+                android:layout_marginTop="10dp"
+                android:text="测试投诉界面" />
+
+            <Button
+                android:id="@+id/testPayment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testReport"
+                android:layout_marginTop="10dp"
+                android:text="测试支付" />
+
+            <Button
+                android:id="@+id/modelImages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testPayment"
+                android:layout_marginTop="10dp"
+                android:text="模特创建作品集" />
+
+            <Button
+                android:id="@+id/editorHead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/modelImages"
+                android:layout_marginTop="10dp"
+                android:text="编辑头像" />
+
+            <Button
+                android:id="@+id/personPhotoes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editorHead"
+                android:layout_marginTop="10dp"
+                android:text="作品相册" />
+
+            <Button
+                android:id="@+id/editorBirthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personPhotoes"
+                android:layout_marginTop="10dp"
+                android:text="编辑生日" />
+
+            <Button
+                android:id="@+id/editorCountry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editorBirthday"
+                android:layout_marginTop="10dp"
+                android:text="编辑国籍" />
+
+            <Button
+                android:id="@+id/editorCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editorCountry"
+                android:layout_marginTop="10dp"
+                android:text="编辑所在地" />
+
+            <Button
+                android:id="@+id/testList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editorCity"
+                android:layout_marginTop="10dp"
+                android:text="ListView测试" />
+
+            <LinearLayout
+                android:id="@+id/bofangView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testList"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/picImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:id="@+id/vidoPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="视频播放测试" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/recodView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bofangView"
+                android:layout_marginTop="10dp"
+                android:text="视频录制" />
+
+            <Button
+                android:id="@+id/chatView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recodView"
+                android:layout_marginTop="10dp"
+                android:text="进入测试聊天" />
+            <Button
+                android:id="@+id/anmotionWelcomPage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chatView"
+                android:layout_marginTop="10dp"
+                android:text="动画欢迎页" />
+            <Button
+                android:id="@+id/testRequestNet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anmotionWelcomPage"
+                android:layout_marginTop="10dp"
+                android:text="Http请求测试" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

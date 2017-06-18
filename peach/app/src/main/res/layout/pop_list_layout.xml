@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="low"
+        android:fadingEdgeLength="0.0sp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:scrollingCache="true" />
+    <View
+        android:id="@+id/bottomNullView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

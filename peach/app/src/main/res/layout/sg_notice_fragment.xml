@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/new_notice_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/new_notice_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/new_notice_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/login_16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/new_notice_iv"
+                android:textColor="@color/dark_green"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="通告"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:id="@+id/condition_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/shoottype_ll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shoottype_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="拍摄类型"
+                    android:textColor="#a7a7a7" />
+
+                <ImageView
+                    android:id="@+id/shoottype_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/down_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:id="@+id/sort_ll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/sort_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="智能排序"
+                    android:textColor="#a7a7a7" />
+
+                <ImageView
+                    android:id="@+id/sort_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/down_gray" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:id="@+id/filter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/filter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="筛选"
+                    android:textColor="#a7a7a7" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_background">
+        <include layout="@layout/common_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.xygame.sg.widget.refreash.PullToRefreshListView2
+            android:id="@+id/refreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#FFFFFFFF"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dip"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:listSelector="#ffffffff"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+
+</LinearLayout>

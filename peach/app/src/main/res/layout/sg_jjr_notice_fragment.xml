@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+    <com.xygame.sg.widget.refreash.PullToRefreshListView2
+        android:id="@+id/refreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#FFFFFFFF"
+        android:divider="@color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="10dip"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#ffffffff"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/message_setting_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="消息通知设置"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/blackList"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="黑名单"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/safe_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="账号与安全"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/recent_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/opinion_rl"
+            style="@style/MenuItemStyle">
+
+
+            <TextView
+                android:id="@+id/identy_type_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="意见反馈"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/identy_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+        <include layout="@layout/gray_divider_line" />
+        <RelativeLayout
+            android:id="@+id/about_rl"
+            style="@style/MenuItemStyle">
+
+
+            <TextView
+                android:id="@+id/tutorial_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="关于我们"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:id="@+id/tutorial_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/score_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="去评分"
+                android:textColor="@color/black" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/clean_cache_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="清理缓存"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cache_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/clean_arrow_iv"
+                android:gravity="center"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/clean_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/quit_rl"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="退出登录"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/intoTestButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_rect_dark_green"
+        android:text="进入功能测试模块"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+</LinearLayout>

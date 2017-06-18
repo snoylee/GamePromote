@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_rl"
+    android:background="@drawable/notice_shoot_select_item_bg"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/cate_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cate_ad_selected" />
+
+    <TextView
+        android:id="@+id/type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cate_iv"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:text="广告平面"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

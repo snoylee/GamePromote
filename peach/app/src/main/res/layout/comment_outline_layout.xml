@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/gray_divider_line" />-->
+
+    <RelativeLayout
+        android:id="@+id/score_rl"
+        style="@style/MenuItemStyle">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="综合得分"
+            android:textColor="@color/text_gray_l" />
+
+        <RatingBar
+            android:id="@+id/score_rating"
+            style="@style/smallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:numStars="5"
+            android:rating="5"
+            android:isIndicator="true"
+            android:singleLine="true"
+            android:stepSize="0.1" />
+
+
+    </RelativeLayout>
+    <include
+        layout="@layout/gray_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/trade_num_rl"
+        style="@style/MenuItemStyle">
+
+
+        <TextView
+            android:id="@+id/trade_num_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="交易次数"
+            android:textColor="@color/text_gray_l" />
+
+        <TextView
+            android:id="@+id/trade_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/trade_num_tip_tv"
+            android:gravity="center"
+            android:textColor="@color/text_gray_l" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/comment_num_tv"
+            android:gravity="center"
+            android:text="全部评价" />
+        <TextView
+            android:id="@+id/comment_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/recent_arrow_iv"
+            android:gravity="center"
+            android:textColor="@color/red" />
+
+        <ImageView
+            android:id="@+id/recent_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrows" />
+    </RelativeLayout>
+
+    <include layout="@layout/gray_divider_line" />
+</LinearLayout>

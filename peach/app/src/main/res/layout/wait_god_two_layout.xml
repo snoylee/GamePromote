@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#969696"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/timerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:textColor="@color/dark_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="之后自动取消该订单"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <com.xygame.second.sg.xiadan.activity.waitfor.ListViewCompat
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray_background"
+        android:dividerHeight="0.5dip"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="low"
+        android:fadingEdgeLength="0.0sp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+</LinearLayout>

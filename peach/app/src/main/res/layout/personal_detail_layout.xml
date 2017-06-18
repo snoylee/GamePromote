@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xygame.second.sg.defineview.CustomScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/personal_back" />
+
+                    <LinearLayout
+                        android:id="@+id/guanZhuButtonView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_rect_dark_green20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="7dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/attention_icon" />
+
+                        <TextView
+                            android:id="@+id/guanZhuTipText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="关注"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/le_meng_back" />
+
+                    <com.xygame.sg.define.view.CircularImage
+                        android:id="@+id/userHeadImage"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userNickText"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/cityText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/intoFansZhuView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝："
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/fansNumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="0"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/tab_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="#ffffff"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    app:tl_divider_color="#1A000000"
+                    app:tl_divider_padding="13dp"
+                    app:tl_divider_width="1dp"
+                    app:tl_iconGravity="LEFT"
+                    app:tl_indicator_color="@color/tab_select"
+                    app:tl_textSelectColor="@color/tab_select"
+                    app:tl_textUnselectColor="@color/tab_unselect"
+                    app:tl_underline_color="#DDDDDD"
+                    app:tl_underline_height="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </com.xygame.second.sg.defineview.CustomScrollView>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab_l1"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            app:tl_divider_color="#1A000000"
+            app:tl_divider_padding="13dp"
+            app:tl_divider_width="1dp"
+            app:tl_iconGravity="LEFT"
+            app:tl_indicator_color="@color/tab_select"
+            app:tl_textSelectColor="@color/tab_select"
+            app:tl_textUnselectColor="@color/tab_unselect"
+            app:tl_underline_color="#DDDDDD"
+            app:tl_underline_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/sendNewsButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/shape_rect_dark_green"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tui_qian_icon"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="聊天"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xiaDanView"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/shape_rect_dark_green"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tui_qian_icon"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下单"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

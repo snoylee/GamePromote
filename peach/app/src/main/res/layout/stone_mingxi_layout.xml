@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+    
+    <LinearLayout 
+        android:id="@+id/choiceView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/monthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deep_gray"
+            android:textSize="@dimen/login_12sp"/>
+        <TextView 
+            android:id="@+id/yearMonthText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deep_gray"
+            android:textSize="@dimen/login_12sp"/>
+        <ImageView 
+            android:layout_width="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrows"/>
+    </LinearLayout>
+
+    <com.xygame.sg.widget.refreash.PullToRefreshListView2
+        android:id="@+id/section_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#FFFFFFFF"
+        android:divider="@color/gray_background"
+        android:dividerHeight="0.5dip"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#ffffffff"
+        android:scrollbars="none" />
+
+</LinearLayout>

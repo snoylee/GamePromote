@@ -1,0 +1,408 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_rect_white" >
+
+        <LinearLayout
+            android:id="@+id/headView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/backLoginWel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sg_login_back_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/closeLoginWel"
+                android:layout_width="40dp"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sg_login_close_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headView"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sg_register2_title"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/login_18sp"
+                android:textStyle="bold" />
+
+            <com.xygame.sg.define.view.CircularImage
+                android:id="@+id/userImage"
+                android:layout_width="74.0dip"
+                android:layout_height="74.0dip"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rect_dark_green"
+                android:padding="0dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/shape_rect_input_white" >
+
+                    <EditText
+                        android:id="@+id/nickName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/sg_register2_nickname"
+                        android:inputType="text"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/login_12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/shape_rect_input_white" >
+
+                        <TextView
+                            android:id="@+id/birthdayView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:hint="@string/sg_register2_bothday"
+                            android:textSize="@dimen/login_12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/shape_rect_input_white"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/manViewBack"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/manIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:id="@+id/manText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/sg_register2_man" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/womanViewBack"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/womanIcon"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                            <TextView
+                                android:id="@+id/womanText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:text="@string/sg_register2_woman" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <LinearLayout
+                        android:id="@+id/modelBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="1dp" >
+
+                        <ImageView
+                            android:id="@+id/selectModelIcon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/register_select_icon"/>
+
+                        <TextView
+                            android:id="@+id/iamModel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/sg_register2_model"
+                            android:textSize="@dimen/login_14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <LinearLayout
+                        android:id="@+id/photorBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="1dp" >
+                        <ImageView
+                            android:id="@+id/selectPhotorIcon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/register_select_icon"/>
+
+                        <TextView
+                            android:id="@+id/iamPhotor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/sg_register2_photor"
+                            android:textSize="@dimen/login_14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <LinearLayout
+                        android:id="@+id/photorBack1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_margin="1dp" >
+                        <ImageView
+                            android:id="@+id/selectPhotorIcon1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/register_select_icon"/>
+
+                        <TextView
+                            android:id="@+id/iamPhotor1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="我是经纪人"
+                            android:textSize="@dimen/login_14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_dark_green"
+                    android:padding="0dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/shape_rect_input_white" >
+
+                        <EditText
+                            android:id="@+id/inviteCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="请输入邀请码"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/login_12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="邀请码没有可不填"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/login_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_gray"
+                    android:text="请注意，"
+                    android:textSize="@dimen/login_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="性别"
+                    android:textSize="@dimen/login_12sp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_gray"
+                    android:text="和"
+                    android:textSize="@dimen/login_12sp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="职业"
+                    android:textSize="@dimen/login_12sp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_gray"
+                    android:text="性别在完成注册后"
+                    android:textSize="@dimen/login_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="不能更改"
+                    android:textSize="@dimen/login_12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_gray"
+                    android:text="哦"
+                    android:textSize="@dimen/login_12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/comfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect_dark_green"
+                android:text="@string/sg_register2_finish"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

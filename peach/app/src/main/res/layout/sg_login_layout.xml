@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_rect_white" >
+
+        <LinearLayout
+            android:id="@+id/headView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/backLoginWel"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sg_login_back_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/closeLoginWel"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sg_login_close_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainBody"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headView"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sg_login_tip"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/login_18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_rect_dark_green"
+                android:padding="0dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/shape_rect_input_white" >
+
+                    <EditText
+                        android:id="@+id/inputAccountEditor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/sg_login_account_hit"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/login_12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_rect_dark_green"
+                android:padding="0dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/shape_rect_input_white" >
+
+                    <EditText
+                        android:id="@+id/inputPwdEditor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="textPassword"
+                        android:hint="@string/sg_login_pwd_hit"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/login_12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/comfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_rect_dark_green"
+                android:text="@string/sg_login_comfirm"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/forgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="100dp"
+                android:text="@string/sg_login_forgetpwd_tip"
+                android:textColor="@color/login_gray"
+                android:textSize="@dimen/login_10sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    xmlns:range="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="性别"
+                        android:textColor="@color/text_gray_l" />
+
+                    <RadioGroup
+                        android:id="@+id/sex_rg"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:checkedButton="@+id/sex_all_rb"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <RadioButton
+                            android:id="@+id/sex_all_rb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton"
+                            android:gravity="center"
+                            android:text="全部"
+                            android:textColor="@color/text_color_list" />
+
+                        <TextView
+                            android:layout_width="3px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#dedede"
+                            android:textColor="#dedede" />
+
+                        <RadioButton
+                            android:id="@+id/male_rb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton"
+                            android:gravity="center"
+                            android:text="男"
+                            android:textColor="@color/text_color_list" />
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="3px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#dedede"
+                            android:textColor="#dedede" />
+
+                        <RadioButton
+                            android:id="@+id/female_rb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radiobutton"
+                            android:gravity="center"
+                            android:text="女"
+                            android:textColor="@color/text_color_list" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="#dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/shoot_address_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:text="拍摄地"
+                            android:textColor="@color/text_gray_l" />
+
+                        <TextView
+                            android:id="@+id/shoot_address_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical|right"
+                            android:hint="不限"
+                            android:textColor="@color/dark_green"
+                            android:textColorHint="#c4c4c4" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/arrows" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:weightSum="1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:text="时间"
+                            android:textColor="@color/text_gray_l" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:textColor="@color/dark_green"
+                            android:textColorHint="#c4c4c4">
+
+
+                            <TextView
+                                android:id="@+id/start_time_tv"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:hint="开始时间"
+                                android:textColor="@color/dark_green"
+                                android:textColorHint="#c4c4c4" />
+
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="0.5dp"
+                                android:layout_centerInParent="true"
+                                android:background="@color/gray_divider" />
+
+                            <TextView
+                                android:id="@+id/end_time_tv"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:hint="结束时间"
+                                android:textColor="@color/dark_green"
+                                android:textColorHint="#c4c4c4" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="110dp"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/gray_divider" />
+
+                        <View
+                            android:layout_width="110dp"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/gray_divider" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:paddingBottom="8dp"
+                            android:text="价格"
+                            android:textColor="@color/text_gray_l" />
+
+                        <MyIRangeSeekBar
+                            android:id="@+id/price_rsb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            bind:begin="${priceBegin}"
+                            bind:end="${priceEnd}"
+                            range:max="5000"
+                            range:min="500"
+                            range:text="+￥" />
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="#eeeeee" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="20dp"
+                            android:text="已预付"
+                            android:textColor="@color/text_gray_l" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+
+                        <CheckBox
+                            android:id="@+id/is_pre_payed_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/checkbox_kg"
+                            android:button="@null"
+                            android:checked="false" />
+                    </LinearLayout>
+
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="#eeeeee" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="报销异地差旅费"
+                        android:textColor="@color/text_gray_l" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" />
+
+                    <CheckBox
+                        android:id="@+id/is_travel_pay_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/checkbox_kg"
+                        android:button="@null"
+                        android:checked="false" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="#dedede"
+                    android:textColor="#dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="报销异地住宿费"
+                        android:textColor="@color/text_gray_l" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <CheckBox
+                        android:id="@+id/is_hotel_pay_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/checkbox_kg"
+                        android:button="@null"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <include layout="@layout/gray_divider_line" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/reset_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="重置"
+            android:textSize="18sp"
+            rv:rv_backgroundColor="@color/text_white"
+            rv:rv_cornerRadius="5dp" />
+
+
+        <Button
+            android:id="@+id/filter_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_dark_green"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/gray_divider_line" />
+
+
+</LinearLayout>

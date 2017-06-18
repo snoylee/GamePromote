@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="50dp">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back"
+                />
+
+            <TextView
+                android:id="@+id/backViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通告群"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rightButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dp"
+            android:minWidth="50dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/sg_news_icon" />
+
+            <TextView
+                android:id="@+id/nuReadNews"
+                android:layout_width="@dimen/main_frame_ico"
+                android:layout_height="@dimen/main_frame_ico"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_circle_red"
+                android:gravity="center"
+                android:maxLength="3"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_frame_pop_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <com.xygame.sg.widget.refreash.PullToRefreshListView2
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"
+        android:focusableInTouchMode="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</LinearLayout>

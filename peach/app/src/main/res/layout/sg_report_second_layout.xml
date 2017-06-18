@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/introduceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/sg_report_input"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/login_14sp" />
+
+                <com.xygame.sg.define.photogrid.PhotoGridView
+                    android:id="@+id/modelPicGridView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" >
+                </com.xygame.sg.define.photogrid.PhotoGridView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/contactMethod"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="@string/sg_report_contactor"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/sg_report_tip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

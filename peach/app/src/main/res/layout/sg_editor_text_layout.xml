@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        <EditText 
+            android:id="@+id/contentTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:hint="@string/sg_comm_hit_text"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:gravity="top"
+            android:textSize="@dimen/login_14sp"/>
+        <TextView 
+            android:id="@+id/numCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

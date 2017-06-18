@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/video_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/add_video"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/add_video_iv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/addpicture_gray" />
+
+                    <ImageView
+                        android:id="@+id/preview_play_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:background="@drawable/icn_play_big" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:text="上传视频" />
+
+
+                <include layout="@layout/gray_divider_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/gray_background"
+                    android:padding="10dp"
+                    android:text="视频默认显示在个人资料第一屏" />
+
+                <include layout="@layout/gray_divider_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/addpicture_gray" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <com.xygame.sg.define.draggrid.DragGrid
+                        android:id="@+id/modelPicGridView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="3"
+                        android:scrollbars="vertical"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/sg_eidtor_headpic_tip"
+            android:textSize="@dimen/login_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

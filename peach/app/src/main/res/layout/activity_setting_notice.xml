@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <include layout="@layout/gray_divider_wide_line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/newNewsView"
+            style="@style/MenuItemStyle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="接受新消息通知"
+                    android:textColor="@color/text_gray_l" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noticeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已开启"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/deep_green"/>
+
+            <CheckBox
+                android:id="@+id/newNewsBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/checkbox_kg"
+                android:button="@null"
+                android:checked="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/systemNewsView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="系统消息"
+                    android:textColor="@color/text_gray_l" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="通知、审核、报名、录用等消息通知"
+                    android:textColor="@color/text_gray_m"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/systemBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/checkbox_kg"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:checked="true" />
+
+
+        </RelativeLayout>
+
+        <include
+            style="@style/SettingMenuItemDividerStyle"
+            layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/chatNewsView"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="聊天消息"
+                android:textColor="@color/text_gray_l" />
+
+
+            <CheckBox
+                android:id="@+id/chatBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/checkbox_kg"
+                android:button="@null"
+                android:checked="true" />
+
+
+        </RelativeLayout>
+
+        <include
+            style="@style/SettingMenuItemDividerStyle"
+            layout="@layout/gray_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/orderNewsView"
+            style="@style/MenuItemStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="订单消息"
+                android:textColor="@color/text_gray_l" />
+
+
+            <CheckBox
+                android:id="@+id/orderBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/checkbox_kg"
+                android:button="@null"
+                android:checked="true" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

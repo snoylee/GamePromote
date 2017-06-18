@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:background="@color/gray_background"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/modifyBodyHightView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/bodyHightTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sg_editor_bodyinfo_bodyHight"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/bodyHightValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="请选择您的身高"
+                                android:gravity="right"
+                                android:textColor="@color/black"/>
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/arrows" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="@color/gray" />
+                        <LinearLayout
+                            android:id="@+id/modifyBodyWeightView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/bodyWeightTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sg_editor_bodyinfo_bodyWeight"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/bodyWeightValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="请选择您的体重"
+                                android:gravity="right"
+                                android:textColor="@color/black"/>
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/arrows" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="@color/gray" />
+                        <LinearLayout
+                            android:id="@+id/modifyBodyHeartView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/bodyHeartTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sg_editor_bodyinfo_bodyHeart"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/bodyHeartValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="请选择您的罩杯"
+                                android:gravity="right"
+                                android:textColor="@color/black"/>
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/arrows" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="@color/gray" />
+                        <LinearLayout
+                            android:id="@+id/modifyBodyThreeHeartView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/bodyThreeHeartTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="@string/sg_editor_bodyinfo_bodyThreeHeart"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/bodyThreeHeartValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:hint="请选择您的三围"
+                                android:gravity="right"
+                                android:textColor="@color/black"/>
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/arrows" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="@color/gray" />
+                        <LinearLayout
+                            android:id="@+id/modifyBodyShoesView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/bodyShoesTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:text="地区"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/bodyShoesValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="right"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/arrows" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <include layout="@layout/gray_divider_wide_line" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/introduceText"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@null"
+                                android:gravity="top"
+                                android:hint="@string/sg_create_modelpic_hitintro"
+                                android:inputType="textMultiLine"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/login_14sp" />
+
+                            <com.xygame.sg.widget.NestedGridView
+                                android:id="@+id/modelPicGridView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:horizontalSpacing="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:numColumns="4"
+                                android:listSelector="@color/transparent"
+                                android:stretchMode="columnWidth"
+                                android:verticalSpacing="5dp" />
+                        </LinearLayout>
+                        <include layout="@layout/gray_divider_line" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray_background"
+                            android:padding="10dp"
+                            android:text="最多上传10张作品，作品将出现在您的个人资料里向用户展示!"
+                            android:textSize="@dimen/login_14sp"
+                            android:visibility="gone"/>
+                        <include layout="@layout/gray_divider_line" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_rect_dark_green"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

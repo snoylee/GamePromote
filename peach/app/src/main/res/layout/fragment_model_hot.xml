@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.model.ModelHotFragment">
+
+    <com.xygame.sg.widget.refreash.PullToRefreshScrollView
+        android:id="@+id/refresh_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/common_empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/model_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/banner_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"/>
+
+
+                    </HorizontalScrollView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_background"
+                        android:padding="10dp"
+                        android:text="热门模特"
+                        android:textColor="@color/text_gray_s"
+                        android:textSize="16sp" />
+
+
+                    <com.xygame.sg.widget.NestedGridView
+                        android:id="@+id/hot_model_n_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_background"
+                        android:cacheColorHint="#FFFFFFFF"
+                        android:fastScrollAlwaysVisible="false"
+                        android:fastScrollEnabled="true"
+                        android:horizontalSpacing="3dp"
+                        android:listSelector="#ffffffff"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="3dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </com.xygame.sg.widget.refreash.PullToRefreshScrollView>
+
+
+</LinearLayout>

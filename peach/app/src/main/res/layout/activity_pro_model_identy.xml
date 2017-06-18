@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="&lt;模范儿>高级模特指本身已具备一定知名度或已签约经纪人/经纪公司的优秀模特，认证通过后，我们将与您深度合作，为您提供全方位的包装推广和优质通告推荐。" />
+
+                    <View
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="您上传的身份资料，照片，视频仅作为认证使用，任何人不可见。" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <include layout="@layout/gray_divider_wide_line" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="经纪人" />
+
+                            <EditText
+                                android:id="@+id/brokername_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center_vertical|right"
+                                android:hint="请输入您的经纪人"
+                                android:maxLength="10"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/textView24"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="#dedede"
+                            android:textColor="#dedede" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="联系电话" />
+
+                            <EditText
+                                android:id="@+id/brokerphone_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center_vertical|right"
+                                android:hint="请输入经纪人联系电话"
+                                android:inputType="number"
+                                android:maxLength="20"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <include layout="@layout/gray_divider_line" />
+
+                        <include layout="@layout/gray_divider_wide_line" />
+
+                        <include layout="@layout/gray_divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="经纪公司" />
+
+                            <EditText
+                                android:id="@+id/agencycompany_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center_vertical|right"
+                                android:hint="请输入经纪公司名称"
+                                android:maxLength="30"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/textView27"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="#dedede"
+                            android:textColor="#dedede" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView28"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="联系电话" />
+
+                            <EditText
+                                android:id="@+id/companyphone_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center_vertical|right"
+                                android:hint="请输入经纪公司联系电话"
+                                android:inputType="number"
+                                android:maxLength="20"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/textView29"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="90dp"
+                            android:background="#dedede"
+                            android:textColor="#dedede" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView30"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:text="联系地址" />
+
+                            <EditText
+                                android:id="@+id/companyaddress_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="center_vertical|right"
+                                android:hint="请输入公司联系地址"
+                                android:maxLength="50"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <include layout="@layout/gray_divider_wide_line" />
+
+                    <include layout="@layout/gray_divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1.上传您的模卡"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/mcard" />
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent" />
+
+
+                            <!--<com.xygame.sg.widget.XCRoundSmallRectImageView-->
+                                <!--android:id="@+id/model_card_iv"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:scaleType="centerCrop"-->
+                                <!--android:src="@drawable/addpic" />-->
+                            <ImageView
+                                android:id="@+id/model_card_iv"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/addpic" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <include layout="@layout/gray_divider_line" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#eeeeee"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/submit_bt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/shape_rect_dark_green"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="提交"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

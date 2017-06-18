@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical"
+
+    tools:context="com.xygame.sg.activity.personal.fragment.LikeListFragment">
+
+    <TextView
+        android:id="@+id/like_num_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="所有1456个赞" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <com.xygame.sg.define.listview.RefreshListView
+        android:id="@+id/like_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dip"/>
+
+</LinearLayout>

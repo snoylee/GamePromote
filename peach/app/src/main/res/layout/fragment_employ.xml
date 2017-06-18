@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.xygame.sg.widget.refreash.PullToRefreshListView
+        android:id="@+id/page_tab_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        ptr:ptrHeaderTextColor="@color/color_grey_999999"
+        ptr:ptrMode="both" />
+
+    <LinearLayout
+        android:id="@+id/action_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/select_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gou_null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="选中(" />
+
+            <TextView
+                android:id="@+id/select_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=")" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/remove_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/dark_green"
+                android:gravity="center"
+                android:text="解除录用"
+                android:textColor="@color/text_white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/main_menu_bg"
+        android:background="@color/white"
+        android:dividerHeight="0.5dp"
+        android:focusableInTouchMode="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+</LinearLayout>

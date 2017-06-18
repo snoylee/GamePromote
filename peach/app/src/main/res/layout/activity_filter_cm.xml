@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+
+    <ScrollView
+        android:id="@+id/root_sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_wide_line" />
+
+            <include layout="@layout/gray_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="性别"
+                    android:textColor="@color/text_gray_l" />
+
+                <RadioGroup
+                    android:id="@+id/sex_rg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/sex_all_rb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+
+                    <RadioButton
+                        android:id="@+id/sex_all_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="@color/text_color_list" />
+
+                    <TextView
+                        android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede" />
+
+                    <RadioButton
+                        android:id="@+id/male_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="男"
+                        android:textColor="@color/text_color_list" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="3px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#dedede"
+                        android:textColor="#dedede" />
+
+                    <RadioButton
+                        android:id="@+id/female_rb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobutton"
+                        android:gravity="center"
+                        android:text="女"
+                        android:textColor="@color/text_color_list" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <include
+                style="@style/ModelFilterItemDividerStyle"
+                layout="@layout/gray_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="国籍"
+                        android:textColor="@color/text_gray_l" />
+
+                    <TextView
+                        android:id="@+id/country_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="不限"
+                        android:textColor="@color/dark_green"
+                        android:textColorHint="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/arrows" />
+                </LinearLayout>
+
+                <include
+                    style="@style/ModelFilterItemDividerStyle"
+                    layout="@layout/gray_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="所在地"
+                        android:textColor="@color/text_gray_l" />
+
+                    <TextView
+                        android:id="@+id/city_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="不限"
+                        android:textColor="@color/dark_green"
+                        android:textColorHint="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/arrows" />
+                </LinearLayout>
+
+
+                <include layout="@layout/gray_divider_line" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/reset_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="重置"
+            android:textSize="18sp"
+            rv:rv_backgroundColor="@color/text_white"
+            rv:rv_cornerRadius="5dp" />
+
+
+        <Button
+            android:id="@+id/filter_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_dark_green"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

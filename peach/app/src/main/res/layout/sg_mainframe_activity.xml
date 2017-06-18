@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.xygame.sg.utils.IndexViewPager
+            android:id="@+id/mPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <include layout="@layout/sg_mainframe_bottom_layout" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/animtion_page"
+        android:visibility="visible" />
+</RelativeLayout>

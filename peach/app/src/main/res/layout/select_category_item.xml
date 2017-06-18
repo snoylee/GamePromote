@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_category_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_background"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/star_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="*"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_red" />
+
+    <TextView
+        android:id="@+id/category_label_tv"
+        android:layout_toRightOf="@+id/star_tv"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:text="@string/category_label" />
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:gravity="center"
+        android:hint="请选择大类" />
+
+    <ImageView
+        android:id="@+id/select_category_right_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrows"
+        />
+
+</RelativeLayout>

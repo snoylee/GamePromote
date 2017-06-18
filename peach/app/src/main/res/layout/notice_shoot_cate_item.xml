@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="0.0dip"-->
+    <!--android:background="@drawable/notice_shoot_cate_item_bg">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_centerInParent="true">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cate_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:src="@drawable/cate_ad_selected" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/cate_iv"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="15dip"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="广告平面"-->
+            <!--android:textColor="@color/color_grey_999999" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/selected_cate_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:src="@drawable/selected_cate" />-->
+
+    <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:background="@color/gray_divider" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/gray_divider" />-->
+
+
+<!--</FrameLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notice_shoot_cate_item_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/cate_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cate_ad_selected" />
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cate_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:maxLines="1"
+            android:text="广告平面"
+            android:textColor="@color/color_grey_999999" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/selected_cate_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/selected_cate" />
+
+</RelativeLayout>

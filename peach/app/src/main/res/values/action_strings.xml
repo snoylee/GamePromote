@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 登录注册参数配置  (王琪) -->
+    <string name="sg_register1_ui_number">${phonenumber}</string>
+    <string name="sg_register1_ui_pwd">${inputpwd}</string>
+    <string name="sg_register1_ui_verifycode">${verifycode}</string>
+    <string name="sg_register1_ui_nickName">${nickname}</string>
+    <string name="sg_register1_ui_brithday">${brithday}</string>
+    <string name="sg_register1_action_verifycode">#.login.ResponseRegisterVerify(${user_sendRegVerifyCode},telephone=${phonenumber})</string>
+    <string name="sg_register1_action_checkverifycode">#.login.ResponseRegisterCheckVerify(${user_verifyPhoneCode},telephone=${phonenumber},verifyCode=${verifycode})</string>
+    <string name="sg_register1_action_register">#.login.ResponseRegister(${user_register},usernick=${nickname})</string>
+    <string name="sg_login_ui_number">${cellphone}</string>
+    <string name="sg_login_ui_pwd">${password}</string>
+    <string name="sg_login">#.login.ResponseLogin(${sg_login},loginName=phone_${cellphone})</string>
+    <string name="sg_forget_ui_number">${forgetphone}</string>
+    <string name="sg_forget_ui_verify">${forgetverify}</string>
+    <string name="sg_forget_verify_button">#.login.ResponseForgetVerify(${user_forgetVerifyCode},telephone=${forgetphone})</string>
+    <string name="sg_forget_action_checkverifycode">#.login.ResponseForgetCheckVerify(${user_verifyPhoneCode},telephone=${forgetphone},verifyCode=${forgetverify})</string>
+    <string name="sg_forget_ui_pwd">${newpassword}</string>
+    <string name="sg_forget_ui_repwd">${renewpassword}</string>
+    <string name="sg_forget_commit_new_pwd">#.login.ResponseCommitNewPwd(${user_commitnewpwssword})</string>
+
+</resources>

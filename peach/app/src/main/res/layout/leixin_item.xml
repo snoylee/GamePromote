@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.xygame.sg.define.view.CircularImage
+                android:id="@+id/godAppIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/godAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <com.xygame.sg.define.photogrid.PhotoGridView
+            android:id="@+id/photoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="1dp"
+            android:numColumns="3"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:listSelector="@color/transparent"
+            android:gravity="center"
+            android:stretchMode="columnWidth"/>
+    </LinearLayout>
+</RelativeLayout>

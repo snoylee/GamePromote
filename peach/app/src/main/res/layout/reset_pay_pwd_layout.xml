@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付旧密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+
+        <EditText
+            android:id="@+id/oldPwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入旧支付密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+
+        <EditText
+            android:id="@+id/firstPwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入支付密码，6位数字"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+
+        <EditText
+            android:id="@+id/secondPwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请再次输入支付密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/login_14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="支付密码用于拍摄完毕后，给模特结算付款时确认结算使用"
+        android:textColor="@color/deep_gray"
+        android:textSize="@dimen/login_12sp" />
+
+    <Button
+        android:id="@+id/comfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_rect_dark_green"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

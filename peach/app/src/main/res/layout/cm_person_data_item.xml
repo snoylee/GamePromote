@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/gray_divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="偏爱模特风格"
+                android:textColor="@color/color_grey_999999" />
+
+            <RelativeLayout
+                android:id="@+id/like_male_model_rl"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="男" />
+
+                <TextView
+                    android:id="@+id/like_male_model_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="请选择偏爱男模特风格" />
+
+                <LinearLayout
+                    android:id="@+id/like_male_model_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <!-- 添加风格 -->
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/like_male_model_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/like_female_model_rl"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="女" />
+
+                <TextView
+                    android:id="@+id/like_female_model_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="请选择偏爱女模特风格" />
+
+                <LinearLayout
+                    android:id="@+id/like_female_model_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <!-- 添加风格 -->
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/like_female_model_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/record_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/record_label"
+                android:textColor="@color/color_grey_999999" />
+
+            <RelativeLayout
+                android:id="@+id/llView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/record_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/record_rl_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/summary_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/summary_label"
+                android:textColor="@color/color_grey_999999" />
+
+            <RelativeLayout
+                android:id="@+id/summary_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/summary_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:hint="暂无简介，请添加！" />
+
+                <ImageView
+                    android:id="@+id/summary_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/record_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/summary_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/basic_info_label"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="12sp" />
+
+        <include layout="@layout/gray_divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/nick_name_rl"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称" />
+
+                <TextView
+                    android:id="@+id/nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="昵称" />
+
+                <ImageView
+                    android:id="@+id/nick_name_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="模范号" />
+
+                <TextView
+                    android:id="@+id/mofan_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="模范号" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/sex_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="性别" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout
+                android:id="@+id/userinfoAge"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="年龄" />
+
+                <TextView
+                    android:id="@+id/age_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="年龄" />
+
+                <ImageView
+                    android:id="@+id/age_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout
+                android:id="@+id/userInfoCountry"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="国籍" />
+
+                <TextView
+                    android:id="@+id/country_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="国籍" />
+
+                <ImageView
+                    android:id="@+id/country_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout
+                android:id="@+id/userInfoCity"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所在地" />
+
+                <TextView
+                    android:id="@+id/area_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="城市" />
+
+                <ImageView
+                    android:id="@+id/area_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/showLine"
+                layout="@layout/gray_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="60dp" />
+
+            <RelativeLayout
+                android:id="@+id/job_type_rl"
+                style="@style/BasicInfoItemStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="职业" />
+
+                <TextView
+                    android:id="@+id/job_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:hint="职业" />
+
+                <ImageView
+                    android:id="@+id/job_type_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/gray_divider_line" />
+
+        <TextView
+            android:id="@+id/noticeTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="通告"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="12sp" />
+
+        <include
+            android:id="@+id/commentView"
+            layout="@layout/comment_outline_layout"></include>
+
+        <LinearLayout
+            android:id="@+id/noticeViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/noticeJJRViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

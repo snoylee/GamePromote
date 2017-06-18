@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.xygame.sg.utils.IRangeSeekBar">
+        <attr name="min" format="string" />
+        <attr name="max" format="string" />
+        <attr name="text" format="string" />
+        <attr name="sequence" format="string" />
+    </declare-styleable>
+</resources>

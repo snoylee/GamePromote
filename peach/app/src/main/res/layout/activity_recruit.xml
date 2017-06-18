@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_background"
+                    android:paddingBottom="10dp">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/request_tip_tv"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="招\n募\n要\n求"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        rv:rv_backgroundColor="@color/color_grey_999999"
+                        rv:rv_cornerRadius="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/notice_request_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/gray_divider_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/gray_background" />
+
+            <include layout="@layout/gray_divider_line" />
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tab_l"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#ffffff"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                app:tl_iconVisible="false"
+                app:tl_indicator_color="@color/tab_select"
+                app:tl_textSelectColor="@color/tab_select"
+                app:tl_textUnselectColor="@color/tab_unselect"
+                app:tl_underline_color="#DDDDDD"
+                app:tl_underline_height="1dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+

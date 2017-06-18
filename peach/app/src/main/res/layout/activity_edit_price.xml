@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical"
+    tools:context="com.xygame.sg.activity.personal.EditPriceActivity">
+
+    <include layout="@layout/sg_head_layout" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <include layout="@layout/select_category_item" />
+
+    <include layout="@layout/gray_divider_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="拍摄小类" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_divider_line" />
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/second_category_ll"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--&lt;!&ndash;<include layout="@layout/category_item" />&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <ListView
+                android:id="@+id/second_category_lv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/add_second_category_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/add_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/add_second_category_icon" />
+
+                <TextView
+                    android:id="@+id/category_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/add_iv"
+                    android:text="新增拍摄小类" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/gray_divider_line" />
+        </LinearLayout>
+
+
+</LinearLayout>

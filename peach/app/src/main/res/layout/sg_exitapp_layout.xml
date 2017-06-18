@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape_rect_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:indeterminateDrawable="@drawable/frame_loading"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="您的账号在其它设备上登录，请重新登录"
+                android:textSize="@dimen/login_16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="最后登录："
+                android:textSize="@dimen/login_16sp" />
+            <TextView
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_16sp" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/titleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txtView"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/comfirmView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/titleLine"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/sg_comm_comfirm"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/login_16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

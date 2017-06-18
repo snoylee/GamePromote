@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sg_head_layout" />
+
+    <View
+        android:id="@+id/optionsView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_l"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:tl_divider_color="#1A000000"
+        app:tl_divider_padding="13dp"
+        app:tl_divider_width="1dp"
+        app:tl_iconGravity="LEFT"
+        app:tl_indicator_color="@color/tab_select"
+        app:tl_textSelectColor="@color/tab_select"
+        app:tl_textUnselectColor="@color/tab_unselect"
+        app:tl_underline_color="#DDDDDD"
+        app:tl_underline_height="1dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@color/gray_background"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

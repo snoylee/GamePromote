@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#2C2C2C"
+    android:orientation="vertical" >
+    <!--android:background="#0F0F38"-->
+    <com.xygame.sg.vido.VideoView
+        android:id="@+id/vv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
